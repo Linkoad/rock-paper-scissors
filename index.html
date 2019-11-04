@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Page Title</title>
+ <meta charset="utf-8">
+ <link href="index.css" rel="stylesheet">
+ </head>
+<body>
+<div id="play">
+	<div class="banner-green"><h1>Rock, Paper, or Scissors?</h1></div>
+  <p>A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.</p>
+  <div class="scoreboard" id="sb">
+    <h2>Scoreboard</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td id="playerScore">0</td>
+            <td id="computerScore">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>You</th>
+            <th>Bot</th>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+  <div id="lb">
+   <h2>Choose Wisely</h2>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
+  <div id="status"></div>
+  <div id="results">
+    <div id="youwon">
+      <div id="banner-green"></div>
+      <button type="play-again" onClick="window.location.reload();">Play again?</button>
+    </div>					
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
